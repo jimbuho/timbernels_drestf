@@ -8,5 +8,5 @@ We assume you have Docker and docker-compose (`sudo apt install docker-compose`)
 ## Instalation
 Run `docker-compose up` to execute this project
 
-## Verification
+## Run Verification
 Execute in browser: [localhost:8000/docs](https://localhost:8000/docs)
