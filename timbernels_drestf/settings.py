@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders'    
+    'corsheaders',
+    'coreapi',
+    # Links W W W
+    'links'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +85,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
@@ -122,8 +124,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # CORS for React
+# https://github.com/adamchainz/django-cors-headers
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
        'https://localhost:3000',
 )
+
+# COREAPI Documentation enabled
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+}
