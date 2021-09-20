@@ -1,0 +1,11 @@
+.vscode/
+.python-version
+*.pyc
+*.pyo
+*__pycache__*
+venv/
+local/
+media/
+.DS_Store
+debug.log
+.env
