@@ -8,3 +8,10 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+
+  test:
+    build: .
+    command: python manage.py test
+    volumes: 
+      - .:/code
+  
